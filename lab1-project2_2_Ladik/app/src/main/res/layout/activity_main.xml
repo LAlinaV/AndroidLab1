@@ -44,10 +44,5 @@
             android:layout_marginHorizontal="30dp"
             android:text="\@Alina_L_N"
             android:visibility="invisible"/>
-
-
-
     </LinearLayout>
-
-
 </LinearLayout>
