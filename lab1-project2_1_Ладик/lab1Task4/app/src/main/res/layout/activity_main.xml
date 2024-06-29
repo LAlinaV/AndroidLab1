@@ -21,10 +21,33 @@
         android:id="@+id/interests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Плавание\nr\nrМузыка\nr\nrФильмы\nr\nrКниги"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Плавание\n\nМузыка\n\nФильмы\n\nКниги"
+        app:layout_constraintBottom_toTopOf="@+id/tg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@Alina_L_N"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@id/interests"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@id/tg"
+        android:text="Telegram"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
