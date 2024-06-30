@@ -55,6 +55,10 @@ fun MyCard() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(bitmap = ImageBitmap.imageResource(R.drawable.me), contentDescription = "My photo")
+        Spacer(modifier = Modifier.height(30.dp))
+        Text(
+            text = "Плавание\n\nМузыка\n\nФильмы\n\nКниги"
+        )
 
 
 
