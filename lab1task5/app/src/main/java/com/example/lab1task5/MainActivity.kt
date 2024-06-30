@@ -59,7 +59,21 @@ fun MyCard() {
         Text(
             text = "Плавание\n\nМузыка\n\nФильмы\n\nКниги"
         )
-
+        Spacer(modifier = Modifier.height(10.dp))
+        Row(Modifier.fillMaxWidth(),horizontalArrangement = Arrangement.SpaceEvenly) {
+            Button(
+                modifier = Modifier.padding(30.dp),
+                onClick = { isVisible.value = true }
+            ) {
+                Text("Telegram")
+            }
+            if (isVisible.value){
+                Text(
+                    text = "@Alina_L_N",
+                    modifier = Modifier.padding(40.dp)
+                )
+            }
+        }
 
 
     }
